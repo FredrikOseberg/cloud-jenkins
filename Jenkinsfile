@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Lint') {
+        stage('Lint HTML') {
             tidy -q -e *.html
         }
         stage('Upload to AWS') {
